@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+
+
+    
+    <section class="activities">
+        <h2>Explore Activities</h2>
+        
+        <label for="country-filter">Filter by Country:</label>
+        <select id="country-filter" onchange="filterActivities()">
+            <option value="all">All Countries</option>
+            <option value="paris">Paris</option>
+            <option value="kenya">Kenya</option>
+            <option value="usa">USA</option>
+            <option value="south-africa">South Africa</option>
+        </select>
+
+        <div class="activities-grid">
+            <div class="activity-card" data-country="kenya">
+                <img src="pictures/wildlife.jpg" alt="Wildlife Safari">
+                <h3>Wildlife Safari (Kenya)</h3>
+                <p>Get up close with exotic animals on an African safari.</p>
+                <button onclick="bookActivity('Wildlife Safari', 'Kenya')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="paris">
+                <img src="pictures/wine.jpg" alt="Wine Tasting">
+                <h3>Wine Tasting (Paris)</h3>
+                <p>Sample the finest wines at scenic vineyards.</p>
+                <button onclick="bookActivity('Wine Tasting', 'Paris')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="usa">
+                <img src="pictures/scuba.jpg" alt="Scuba Diving">
+                <h3>Scuba Diving (USA)</h3>
+                <p>Dive into crystal-clear waters and discover marine life.</p>
+                <button onclick="bookActivity('Scuba Diving', 'USA')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="south-africa">
+                <img src="pictures/SouthA.jpg" alt="Hiking Adventure">
+                <h3>Hiking Adventure (South Africa)</h3>
+                <p>Enjoy breathtaking mountain trails in South Africa.</p>
+                <button onclick="bookActivity('Hiking Adventure', 'South Africa')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="south-africa">
+                <img src="pictures/Robben Island.jpg" alt="Museum">
+                <h3>Robben Island (South Africa)</h3>
+                <p>Visit Robben Island to explore its rich history, former prison, and stunning views of Table Mountain..</p>
+                <button onclick="bookActivity('Robben Island', 'South Africa')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="south-africa">
+                <img src="pictures/SouthA.jpg" alt="Hiking Adventure">
+                <h3>Hiking Adventure (South Africa)</h3>
+                <p>Enjoy breathtaking mountain trails in South Africa.</p>
+                <button onclick="bookActivity('Hiking Adventure', 'South Africa')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="usa">
+                <img src="pictures/Hoover Dam.jpg" alt="Hoover Dam">
+                <h3>Hoover Dam (USA)</h3>
+                <p>Hoover Dam is a massive concrete dam on the Colorado River, known for its impressive engineering, scenic views, and hydroelectric power generation.</p>
+                <button onclick="bookActivity('Hoover Dam', 'USA')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="usa">
+                <img src="pictures/Studios.jpg" alt="Studio">
+                <h3>Universal Studios Hollywood (USA)</h3>
+                <p> Is a world-famous theme park and film studio offering thrilling rides, live shows, and behind-the-scenes movie experiences.</p>
+                <button onclick="bookActivity('Universal Studios Hollywood', 'USA')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="paris">
+                <img src="pictures/Panthéon.jpg" alt="Panthéon">
+                <h3>Panthéon (Paris)</h3>
+                <p>Visiting the Panthéon is an activity where you can explore its grand architecture, learn about French history, and pay tribute to notable figures buried there.</p>
+                <button onclick="bookActivity('Panthéon', 'Paris')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="paris">
+                <img src="pictures/Musee.jpg" alt="Musée de l'Orangerie">
+                <h3>Musée de l'Orangerie (Paris)</h3>
+                <p>Visiting the Musée de l'Orangerie is an activity where you can admire Impressionist and Post-Impressionist masterpieces, including Monet’s famous Water Lilies series.</p>
+                <button onclick="bookActivity('Musée de lOrangerie', 'Paris')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="kenya">
+                <img src="pictures/Lake Nakuru.jpg" alt="Lake Nakuru National Park">
+                <h3>Lake Nakuru National Park (Kenya)</h3>
+                <p> Is a scenic wildlife reserve in Kenya, famous for its flamingo-filled lake, diverse bird species, and rich wildlife, including rhinos, lions, and giraffes, set against breathtaking landscapes.</p>
+                <button onclick="bookActivity('Lake Nakuru National Park', 'Kenya')">Book Now</button>
+            </div>
+            <div class="activity-card" data-country="kenya">
+                <img src="pictures/Diani Beach.jpg" alt="Diani Beach">
+                <h3>Diani Beach (Kenya)</h3>
+                <p> Is a stunning tropical paradise on Kenya’s coast, known for its soft white sands, crystal-clear waters, swaying palm trees, and vibrant marine life, making it a perfect destination for relaxation and water sports.</p>
+                <button onclick="bookActivity('Diani Beach', 'Kenya')">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <script src="activities.js"></script>
+</body>
+</html>

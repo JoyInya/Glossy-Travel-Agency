@@ -1,0 +1,21 @@
+{
+    "name": "administrator/glossytravels",
+    "version": "1.0.0",
+    "description": "A travel booking system with paypal integration",
+    "autoload": {
+        "psr-4": {
+            "Administrator\\Glossytravels\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joy Inya",
+            "email": "inyaj193@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "paypal/paypal-server-sdk": "^1.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

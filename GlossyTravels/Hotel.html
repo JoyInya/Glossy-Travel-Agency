@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="Hotel.CSS">
+</head>
+<body>
+    
+    <section class="hotels">
+        <h2>Find the Perfect Stay</h2>
+
+        <label for="country-filter">Filter by Country:</label>
+        <select id="country-filter" onchange="filterHotels()">
+            <option value="all">All Countries</option>
+            <option value="paris">Paris</option>
+            <option value="kenya">Kenya</option>
+            <option value="usa">USA</option>
+            <option value="south-africa">South Africa</option>
+        </select>
+
+        <div class="hotels-grid">
+            <div class="hotel-card" data-country="paris">
+                <img src="pictures/Hote1.1.avif" alt="Hotel in Paris">
+                <h3>St Christopher's Inn Paris Canal (Paris)</h3>
+                <p>A vibrant and highly-rated budget hostel with a scenic canal-side location and a lively social atmosphere..</p>
+                <p><strong>Price:</strong> $69 per night</p>
+                <button onclick="bookHotel('St Christophers Inn Paris Canal', 'Paris')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="paris">
+                <img src="pictures/Hotel2.png" alt="Hotel in Paris">
+                <h3>Hôtel de NELL (Paris)</h3>
+                <p>A 5-star boutique hotel located in Paris's 9th arrondissement, offering a blend of luxury and understated elegance</p>
+                <p><strong>Price:</strong> $310 per night</p>
+                <button onclick="bookHotel('Hôtel de NELL', 'Paris')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="kenya">
+                <img src="pictures/Hotel3.png" alt="Hotel in Kenya">
+                <h3>Salt Lick Safari Lodge (Kenya)</h3>
+                <p>Experience wildlife with a luxurious stay.</p>
+                <p><strong>Price:</strong> $204 per night</p>
+                <button onclick="bookHotel('Salt Lick Safari Lodge', 'Kenya')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="kenya">
+                <img src="pictures/Hotel4.png" alt="Hotel in Kenya">
+                <h3>Glamping Kenya Mt. Kenya Lodge  (Kenya)</h3>
+                <p>A luxury eco-friendly glamping lodge at the foot of Mount Kenya, offering stunning views, deluxe tents, and a serene getaway in nature.</p>
+                <p><strong>Price:</strong> $180 per night</p>
+                <button onclick="bookHotel('Glamping Kenya Mt. Kenya Lodge', 'Kenya')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="kenya">
+                <img src="pictures/Hotel5.jpeg" alt="Hotel in Kenya">
+                <h3>Billionaire Resort  (Kenya)</h3>
+                <p>A luxurious 5-star beachfront resort in Malindi, offering private beach access, elegant accommodations, fine dining, and world-class amenities.</p>
+                <p><strong>Price:</strong> $664 per night</p>
+                <button onclick="bookHotel('Billionaire Resort', 'Kenya')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="usa">
+                <img src="pictures/Hotel6.jpg" alt="Hotel in USA">
+                <h3>The Kahala Hotel & Resort(USA)</h3>
+                <p>A luxurious beachfront resort in Honolulu, Hawaii, offering world-class accommodations, fine dining, a private lagoon with dolphins, and a serene escape near Waikiki.</p>
+                <p><strong>Price:</strong> $423 per night</p>
+                <button onclick="bookHotel('The Kahala Hotel & Resort', 'USA')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="usa">
+                <img src="pictures/Hotel7.jpg" alt="Hotel in USA">
+                <h3>Loews Hollywood Hotel(USA)</h3>
+                <p>A stylish and modern hotel in the heart of Hollywood, offering luxury accommodations, a rooftop pool, and stunning views of the Hollywood Sign and Walk of Fame.</p>
+                <p><strong>Price:</strong> $243 per night</p>
+                <button onclick="bookHotel('Loews Hollywood Hotel', 'USA')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="south-africa">
+                <img src="pictures/Hotel8.png" alt="Hotel in South Africa">
+                <h3>The Palace of the Lost City (South Africa)</h3>
+                <p>A majestic 5-star resort in South Africa’s Sun City, inspired by African legends, featuring opulent architecture, lush gardens, luxurious accommodations, and a grand tropical paradise feel.</p>
+                <p><strong>Price:</strong> $430 per night</p>
+                <button onclick="bookHotel('The Palace of the Lost City', 'South Africa')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="south-africa">
+                <img src="pictures/Hotel9.avif" alt="Hotel in South Africa">
+                <h3>The Kingdom resort(South Africa)</h3>
+                <p>A family-friendly resort near Sun City, South Africa, offering modern accommodations, a water park, adventure activities, and a relaxing escape surrounded by nature.</p>
+                <p><strong>Price:</strong>$66 per night</p>
+                <button onclick="bookHotel('The Kingdom resort','South Africa')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="south-africa">
+                <img src="pictures/Hotel11.jpg" alt="Hotel in South Africa">
+                <h3>City Lodge Hotel Gqeberha(South Africa)</h3>
+                <p>A comfortable and modern hotel in Gqeberha (Port Elizabeth), offering spacious rooms, a relaxing atmosphere, and convenient access to the city’s beaches and business districts.</p>
+                <p><strong>Price:</strong>$70 per night</p>
+                <button onclick="bookHotel('City Lodge Hotel Gqeberha','South Africa')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="paris">
+                <img src="pictures/Hotel10.jpg" alt="Hotel in Paris">
+                <h3>JO&JOE Paris Gentilly (Paris)</h3>
+                <p>A vibrant and stylish hybrid hotel in Paris, combining hostel-style social living with modern comfort, featuring trendy communal spaces, a lively bar, and easy access to the city.</p>
+                <p><strong>Price:</strong> $83 per night</p>
+                <button onclick="bookHotel('JO&JOE Paris Gentilly', 'Paris')">Book Now</button>
+            </div>
+            <div class="hotel-card" data-country="usa">
+                <img src="pictures/Hotel7.jpg" alt="Hotel in USA">
+                <h3>Oasis at Gold Spike(USA)</h3>
+                <p>A stylish and lively boutique hotel in downtown Las Vegas, featuring retro-modern rooms, a fun outdoor pool, and a vibrant social scene with games and live entertainment.</p>
+                <p><strong>Price:</strong> $55 per night</p>
+                <button onclick="bookHotel('Oasis at Gold Spike', 'USA')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+
+<script src="Hotel.js"></script>
+</body>
+</html>

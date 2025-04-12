@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Trip</title>
+    <link rel="stylesheet" href="Book Flight.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+    <body>
+        <header class="section__container header__container">
+            <h1 class="section__header">Find And Book<br>A Great Experience</h1>
+ 
+        </header>
+
+        <section class="section__container booking__container">
+            <div class="booking__nav">
+                <span>Economy Class</span>
+                <span>Business Class</span>
+                <span>First Class</span>
+            </div>
+            <form>
+                <div class="form__group">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <input type="text" id="fromLocation"/>
+                            <label>Location</label>
+                        </div>
+                       <p>Where are you going?</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <input type="text" id="ToLocation"/>
+                            <label>Location</label>
+                        </div>
+                       <p>Where you are</p>
+                    </div>
+                </div>
+
+                </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-user-3-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <input type="number" id="travelers">
+                            <label>Travellers</label>
+                        </div>
+                        <p>Add Guests</p>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <span><i class="ri-calendar-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                    <input type="date" id="departure" required>
+                    <label >Departure</label>
+                        </div>
+                        <p>Add date</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-calendar-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <input type="date" id="return" required>
+                            <label for="return">Return</label>
+                        </div>
+                        <p>Add date</p>
+                    </div>
+                </div>
+                   
+<div class="form__group">
+    <span><i class="ri-money-dollar-circle-line"></i></span>
+    <div class="input__content">
+        <div class="input__group">
+            <label>Total Price</label>
+            <p id="totalPrice">$0</p> 
+    </div>
+</div>
+
+                
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </form>
+        </section>
+
+        <section class="section__container journey__container" >
+            <h2 class="section__header">Travel like never before</h2>
+            <p class="section__destination">
+                Effortless planning for your adventure plan yours today!
+            </p>
+            <div class="journey__grid">
+                <div class="journey__card">
+                    <div class="journey__card__bg">
+                        <span><i class="ri-bookmark-3-line"></i></span>
+                        <h4>Seamless booking process</h4>
+                    </div>
+                    <div class="journey__card__content">
+                        <span><i class="ri-bookmark-3-line"></i></span>
+                        <h4>Easy reservation one click away</h4>
+                        <p>
+                            Our platform offers everything you need for a perfect trip, from flights and accommodations to exciting activities and experiences.  
+                        </p>
+                    </div>
+                </div>
+                <div class="journey__card">
+                    <div class="journey__card__bg">
+                        <span><i class="ri-bookmark-3-line"></i></span>
+                        <h4>Customized plan just for you</h4>
+                    </div>
+                    <div class="journey__card__content">
+                        <span><i class="ri-bookmark-3-line"></i></span>
+                        <h4>Book instantly with ease</h4>
+                        <p>
+                            Your dream vacation starts here! Book flights, stays, and activities effortlessly.                
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    <script src="Book Flight.js"></script>
+</body>
+</html>

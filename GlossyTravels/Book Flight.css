@@ -1,0 +1,272 @@
+:root {
+    --primary-color:#2887ff;
+    --primary-color-dark:#2476da;
+    --text-dark:#0a0a0a;
+    --text-light:#737373;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --max-width: 1200px;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header__container .section__header {
+text-align: center;
+font-size: 3rem;
+line-height: 4rem;
+}
+.booking__container{
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.booking__nav{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+}
+.booking__nav span {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.booking__nav span:nth-child(2){
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+.booking__container form{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) auto;
+    gap: 1rem;
+}
+.booking__container .input__content{
+    width: 100%;
+}
+.booking__container .form__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.booking__container .form__group span{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    border-radius: 1rem;
+}
+.booking__container .input__group{
+    width: 100%;
+    position: relative;
+}
+.booking__container label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+.booking__container input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    
+    color: var(--text-dark);
+}
+.booking__container input:focus ~ label{
+    font-size: 0.8rem;
+    top: 0;
+}
+.booking__container .form__group p{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+} 
+.booking__container .btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.journey__grid{
+    margin-top: 2rem;
+    display: grid;
+    gap: 0.1rem;
+}
+
+.journey__card{
+    position: relative;
+    isolation: isolate;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.journey__card__bg{
+    padding: 2rem;
+    background-color: var(--extra-light);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.journey__card__bg__span{
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.journey__card__bg__h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.journey__card__content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    transition: 0.3s;
+}
+
+.journey__card:hover .journey__card__content{
+    top: 0;
+}
+
+.journey__card__content span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 7px 9px;
+    font-size: 1rem;
+    color: var(--white);
+    border-radius: 100%;
+}
+
+.journey__card__h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white) ;
+}
+
+.journey__card__content p{
+    color: var(--extra-light);
+}
+@media (width < 1200px){
+    .section__container.header__container,
+    .section__container.plan__container{
+        overflow: hidden;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .booking__container form {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .booking__container form {
+        grid-template-columns: 1fr; 
+    }
+
+    .booking__nav {
+        flex-direction: column;
+    }
+
+    .booking__nav span {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header__container .section__header {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .booking__container .btn {
+        font-size: 1.2rem;
+    }
+}
+
+
+.journey__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+}
+
+
+.journey__card {
+    position: relative;
+    isolation: isolate;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.journey__card__bg {
+    padding: 2rem;
+    background-color: var(--extra-light);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.journey__card__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    transition: 0.3s;
+}
+
+.journey__card:hover .journey__card__content {
+    top: 0;
+}
+
+
+@media (max-width: 600px) {
+    .journey__grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .booking__container {
+        padding: 1rem;
+    }
+}

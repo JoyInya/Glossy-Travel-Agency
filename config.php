@@ -1,0 +1,3 @@
+<?php
+define("PAYPAL_CLIENT_ID", "Ab9NyJwWGqIvzhuEtg2Ag_eCMECLUjhFTQizEHVMYdaS2fRPl1M8HmRKZKqh6JKf6s-82Qynv117qQrV");
+?>

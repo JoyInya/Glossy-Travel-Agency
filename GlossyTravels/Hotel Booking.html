@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="Hotel Booking.CSS">
+</head>
+<body>
+
+    <section class="booking-form">
+        <h2>Hotel Booking</h2>
+        <form action="confirmation.html" method="POST">
+            <label for="hotel-name">Hotel Name:</label>
+            <input type="text" id="hotel-name" name="hotel-name" required>
+
+            <p><strong>Location:</strong> <span id="hotel-location"></span></p>
+
+            <label for="checkin-date">Check-in Date:</label>
+            <input type="date" id="checkin-date" name="checkin-date" required>
+
+            <label for="checkout-date">Check-out Date:</label>
+            <input type="date" id="checkout-date" name="checkout-date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit" class="confirm-btn">Confirm Booking</button>
+        </form>
+    </section>
+
+
+
+    <script src="Hotel Booking.js"></script>
+</body>
+</html>

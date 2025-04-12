@@ -1,0 +1,27 @@
+# Ignore sensitive files containing private information
+send_notifications.php
+db_config.php
+
+# Ignore all .env files (environment variables)
+*.env
+
+# Ignore logs and temporary files
+*.log
+
+# Ignore vendor directory for PHP dependencies (if you're using Composer)
+vendor/
+
+# Ignore IDE or editor files
+.vscode/
+.idea/
+
+# Ignore system files that macOS/Windows creates
+.DS_Store
+Thumbs.db
+
+# Ignore all files with .bak extension (backup files)
+*.bak
+
+# Ignore compiled PHP bytecode files
+*.phar
+*.phtml
